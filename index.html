@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<!-- links de fontes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Gerador de Senhas do Althi</title>
+</head>
+<body>
+    <!-- logo -->
+    <div class="logo">
+        <h1>Gerador de Senhas do Althi</h1>
+    </div>
+
+    <main class="container-input">
+        <span>Tamanho <span id="quantidade"></span> Caracteres</span>
+        <input type="range" id="slider" class="slider" min="5" max="25" value="15">
+
+        <button id="button" class="button-cta" onclick="geradorSenha()">Gerar senha</button>
+    </main>
+
+    <div id="container-senha" onclick="copiarSenha()" class="container-senha hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="senha" class="senha"></span>
+        <span class="tooltip">Clique na senha para copiar ☝</span>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+</html>
